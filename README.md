@@ -42,5 +42,5 @@ Asymmetric encryption is based on the use of 2 different keys. A public key and 
 Initially, the server has both keys, and the client neither. When the client makes a secure communication request to the server, the server provides the public key. 
 
 The client can then encrypt its message using the public key supplied. It then sends the encrypted message to the server, which decrypts it using its private key. This key is not shared.
-<img src="assets/symetric.png" alt="asymetric">
+<img src="assets/asymetric.png" alt="asymetric">
 
