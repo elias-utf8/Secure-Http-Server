@@ -43,4 +43,17 @@ Initially, the server has both keys, and the client neither. When the client mak
 
 The client can then encrypt its message using the public key supplied. It then sends the encrypted message to the server, which decrypts it using its private key. This key is not shared.
 <img src="assets/asymetric.png" alt="asymetric">
+the asymmetric encryption used is the RSA mathematical algorithm, based on Fermat's Little Theorem of modular arithmetic.
 
+<br>Here is an example of an RSA algorithm</br>
+
+* Choose two prime numbers p = 3, q = 11 ;
+* Their product n = 3 × 11 = 33 is the encryption modulus ;
+* φ(n) = (3 - 1) × (11 - 1) = 2 × 10 = 20 ;
+* Choose e= 3 (prime with 20) as the encryption exponent ;
+* The decryption exponent is d = 7, the inverse of 3 modulo 20 (ed = 3 × 7 ≡ 1 mod 20).
+
+The public key is (n, e) = (33, 3), and the private key is (n, d) = (33, 7). 
+
+* Encryption of M = 4 the public key: 43 ≡ 31 mod 33, the encrypted is C = 31 
+* Decryption of C = 31: 317 ≡ 4 mod 33, the original message M = 4 is found.
