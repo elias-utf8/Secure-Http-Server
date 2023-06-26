@@ -96,7 +96,6 @@ cd Secure-Http-Server
 Run the `server.py` on server side and `client.py` on client side.
 
 ### In server.py
-python server.py
 There is an graphic interface, with two user entry zones, one for the server IP address and the other for the port. 
 * Default: 127.0.0.1 and 80
 You can then start the server by click on the button and see all events in textbox.
