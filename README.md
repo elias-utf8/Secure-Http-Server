@@ -2,10 +2,10 @@
 <h3 align="center">Secure-Http-Server</h3>
 
 <p align="center">
-    A python http server running with an RSA asymmetric encryption implementation.\n
-    _Warning: For professional use, please use the SSL/TLS (HTTPS) protocol._
+    A python http server running with an RSA asymmetric encryption implementation.
+    
     <br>
-
+_Warning: For professional use, please use the SSL/TLS (HTTPS) protocol._
  
 ## About The Project
 <img src="assets/preview.png" alt="preview">
