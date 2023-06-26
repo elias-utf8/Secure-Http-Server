@@ -3,7 +3,7 @@
 
 <p align="center">
     A python http server running with an RSA asymmetric encryption implementation.
-    *Warning: For professional use, please use the SSL/TLS (HTTPS) protocol.*
+    _Warning: For professional use, please use the SSL/TLS (HTTPS) protocol._
     <br>
 
  
