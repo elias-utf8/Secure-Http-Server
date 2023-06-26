@@ -99,14 +99,9 @@ Run the `server.py` on server side and `client.py` on client side.
 python server.py
 There is an graphic interface, with two user entry zones, one for the server IP address and the other for the port. 
 * Default: 127.0.0.1 and 80
-
-Two user entry zones, one for the server IP address and the other for the port. 
-Default: 127.0.0.1 and 80
-You can then start the server by click on the button.
+You can then start the server by click on the button and see all events in textbox.
 
 ### In client.py
 In first you need to set correct server IP and port in the code.
 Default: 127.0.0.1 and 80
-After :
-python client.py
 Type a message in client and see it in server.py in the logs textbox made for it. 
