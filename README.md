@@ -45,7 +45,7 @@ The client can then encrypt its message using the public key supplied. It then s
 <img src="assets/asymetric.png" alt="asymetric">
 the asymmetric encryption used is the RSA mathematical algorithm, based on Fermat's Little Theorem of modular arithmetic.
 
-<br>Here is an example of an RSA algorithm</br>
+### Example of an RSA algorithm
 
 * Choose two prime numbers p = 3, q = 11 ;
 * Their product n = 3 × 11 = 33 is the encryption modulus ;
@@ -57,3 +57,10 @@ The public key is (n, e) = (33, 3), and the private key is (n, d) = (33, 7).
 
 * Encryption of M = 4 the public key: 43 ≡ 31 mod 33, the encrypted is C = 31 
 * Decryption of C = 31: 317 ≡ 4 mod 33, the original message M = 4 is found.
+  
+### Asymmetric encryption flaw
+A hacker can pretend to be a server and generate his own public and private key. The client therefore thinks it is communicating with the real server, when in fact it is communicating with the pirate.
+
+The hacker will then decrypt and recover the client's message before pretending to be the client, re-encrypting the message with the real server's public key and sending it to the server so as not to arouse suspicion.
+
+<img src="assets/flaw.png" alt="flaw">
