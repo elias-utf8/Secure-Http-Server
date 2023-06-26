@@ -21,3 +21,20 @@ Librairies
 * [Json](https://docs.python.org/fr/3/library/json.html?highlight=json#module-json)
 * [Time](https://docs.python.org/fr/3/library/time.html?highlight=time#module-time)
 * [Base64](https://docs.python.org/fr/3/library/base64.html?highlight=base64#module-base64)
+
+  
+## Encryption functionning
+To prevent the man-in-the-middle attack, communication encryption exists.
+
+### Symetric encryption
+There are 2 types of encryption, symmetrical and asymmetrical.
+Symmetric encryption involves using 2 identical private keys for two clients or for a client and a server. One encrypts its message with its key and the other decrypts it with the same key. 
+
+[[https://upload.wikimedia.org/wikipedia/commons/9/92/Chiffrement_sym%C3%A9trique.png]]
+
+If a hacker manages to intercept the message, it will be encrypted and therefore unreadable without the key. But if the hacker manages to intercept the very first communication, which consists of giving the key to the other, then he will be able to decrypt all the messages he intercepts afterwards. 
+
+Asymmetric encryption must therefore be implemented.
+
+
+
