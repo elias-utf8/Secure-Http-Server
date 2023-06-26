@@ -5,7 +5,7 @@
     A python http server running with an RSA asymmetric encryption implementation.
     <br>
 
-
+Warning: For professional use, please use the SSL/TLS protocol. 
 ## About The Project
 <img src="assets/preview.png" alt="preview">
 
@@ -64,3 +64,4 @@ A hacker can pretend to be a server and generate his own public and private key.
 The hacker will then decrypt and recover the client's message before pretending to be the client, re-encrypting the message with the real server's public key and sending it to the server so as not to arouse suspicion.
 
 <img src="assets/flaw.png" alt="flaw">
+
