@@ -66,3 +66,47 @@ The hacker will then decrypt and recover the client's message before pretending 
 
 <img src="assets/flaw.png" alt="flaw">
 
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+You need to install Python, that can be done [here](https://www.python.org)
+
+### Installation
+1. Clone the repo
+   ```sh
+   git clone https://github.com/KursK-sys/Secure-Http-Server.git
+   cd Secure-Http-Server
+   ```
+2. Install Python packages
+   ```sh
+   pip install -r requirements.txt
+   ```
+   
+#### Or this can be done using android with unrooted Termux
+```
+git clone https://github.com/KursK-sys/Secure-Http-Server.git
+pkg install python
+pip install -r requirements.txt
+cd Secure-Http-Server
+```
+## Usage
+
+Run the `server.py` on server side and `client.py` on client side.
+
+### In server.py
+python server.py
+There is an graphic interface, with two user entry zones, one for the server IP address and the other for the port. 
+* Default: 127.0.0.1 and 80
+
+Two user entry zones, one for the server IP address and the other for the port. 
+Default: 127.0.0.1 and 80
+You can then start the server by click on the button.
+
+### In client.py
+In first you need to set correct server IP and port in the code.
+Default: 127.0.0.1 and 80
+After :
+python client.py
+Type a message in client and see it in server.py in the logs textbox made for it. 
