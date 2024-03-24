@@ -20,7 +20,7 @@ def logging():
 	log = f"{annee}-{mois}-{jour} {heure}-{minute}-{seconde} | "
 	return log
 
-class ServerHopital(BaseHTTPRequestHandler):
+class Serveur(BaseHTTPRequestHandler):
 	def Chiffrement(self):
 		def VerificationNombrePremier(number):
 			if number < 2:
@@ -115,7 +115,7 @@ app.geometry("1000x550")
 def lancement():
 	print(ip.get())
 	server_address = (ip.get(), int(port.get()))
-	httpd = HTTPServer(server_address, ServerHopital)
+	httpd = HTTPServer(server_address, Serveur)
 	LOGS.insert(customtkinter.END, f"{logging()} Le serveur est en marche sur le port {port.get()} ...\n")
 	threading.Thread(target=httpd.serve_forever).start()
 
