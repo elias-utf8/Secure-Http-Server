@@ -5,7 +5,7 @@
     A python http server running with an RSA asymmetric encryption implementation.
     <br>
     
-_Warning: For professional use, please use the SSL/TLS (HTTPS) protocol._
+_Warning: This code is for EXPERIMENTAL and EDUCATIONAL use to learn cryptography basics. For professional use, please use the SSL/TLS (HTTPS) protocol._
  
 ## About The Project
 <img src="assets/preview.png" alt="preview">
@@ -108,7 +108,7 @@ Type a message in client and see it in server.py in the logs textbox made for it
 ## LICENSE
 MIT License
 
-Copyright (c) 2022 KursK
+Copyright (c) 2022 Elias
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
